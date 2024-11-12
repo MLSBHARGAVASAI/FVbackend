@@ -49,12 +49,7 @@
                             <p class="card-text"><%= item.description %></p>
                             <p class="text-muted"><%= item.price %> (500 grams)</p>
                             <div class="d-flex justify-content-center mt-auto">
-                                <button class="btn btn-success mr-2">Buy Now</button>
-                                <form action="/delete-vegetable/<%= item._id %>" method="POST" style="display: inline;">
-                                    <button type="submit" class="btn btn-danger">
-                                        <i class="fas fa-trash-alt"></i>
-                                    </button>
-                                </form>
+                                <a href="/add-to-cart/<%= item._id %>" class="btn btn-success">Buy Now</a>
                             </div>
                         </div>
                     </div>

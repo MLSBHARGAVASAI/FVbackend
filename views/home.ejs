@@ -12,7 +12,7 @@
     <style>
         /* Full-page background image */
         body {
-            background-image: url('DALL·E 2024-11-07 10.05.37 - A high-resolution, vibrant background image featuring a variety of fresh fruits and vegetables, arranged attractively on a rustic wooden table. The fr.webp'); /* Replace with a suitable image URL */
+            background-image: url('https://thumbs.dreamstime.com/z/fruit-vegetable-textures-9966904.jpg');
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
@@ -43,6 +43,36 @@
             height: 100vh;
             text-align: center;
         }
+        .nav-button {
+    font-size: 16px; /* Adjust the font size */
+    padding: 10px 20px; /* Add padding to make buttons bigger */
+    margin: 5px; /* Add space between buttons */
+    border-radius: 5px; /* Make the corners rounded */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Add shadow for better visibility */
+    opacity: 0.9; /* Make the buttons slightly transparent for a modern look */
+    transition: all 0.3s ease; /* Smooth transition effect */
+}
+
+.nav-button:hover {
+    opacity: 1; /* Full opacity when hovering */
+    transform: translateY(-3px); /* Slight lift effect on hover */
+}
+
+.btn-primary {
+    background-color: rgba(0, 123, 255, 0.8); /* Semi-transparent primary color */
+    border: none;
+}
+
+.btn-success {
+    background-color: rgba(40, 167, 69, 0.8); /* Semi-transparent success color */
+    border: none;
+}
+
+.btn-warning {
+    background-color: rgba(255, 193, 7, 0.8); /* Semi-transparent warning color */
+    border: none;
+}
+
     </style>
 </head>
 <body>
@@ -54,12 +84,15 @@
         <a href="/vegetables">
             <button class="btn btn-success nav-button">Vegetables</button>
         </a>
+        <a href="/cart">
+            <button class="btn btn-warning nav-button">Cart</button>
+        </a>
     </div>
 
     <!-- Home Page Content with Overlay -->
     <div class="main-content">
         <div class="content-overlay">
-            <h1>Welcome to the Fruits and Vegetables Store!</h1>
+            <h1>Welcome to the Health-Wellth Store!</h1>
             <p>Explore our fresh collection of fruits and vegetables. Click on the buttons above to browse.</p>
         </div>
     </div>
